@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title></title>
+<link rel="stylesheet" href="css/style1.css">
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">  
+$(function(){
+var SampleVal =10,
+    SampleNum = 0,
+    SampleNow =0;
+jQuery.fn.DoSample = function(config){
+return this.each(function(i,elem){
+           SampleNum++;
+           SampleNow++;
+           $('#body').css("background-posion","100px 100px"{,'transform':'rotate('+SampleVal*SampleNum+'deg)'});
+           }
+           });
+           }
+$('#body'). animate(function(){
+SampleTimer = setInterval(function(){$('#body').DoSample()},infinite);
+});
+});
+</script>
+</head>
+
+
+
+
+
+<body>
+<div id="SampleWrap"></div>
+<div id="Sample"></div>
+</div>
+<div id="container">
+
+
+<center>
+<header>
+</header>
+</center>
+
+<nav id="menu">
+<ul>
+<li><a href="home.html"></a></li>
+<li><a href="yougaku.html"></a></li>
+<li><a href="zyouhou.html"></a></li>
+<li><a href="rironn.html"></a></li>
+<li><a href="skype.html"></a></li>
+</ul>
+</nav>
+
+<aside id="mainimg">
+<img src="images/ggg.JPG" alt="">
+</aside>
+
+
+<div id="contents">
+</div>
+
+<div id="footer">
+<small></small>
+</div>
+
+
+
+
+</div>
+
+</body>
+
+
+</html>
