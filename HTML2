@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title></title>
+<link rel="stylesheet" href="css/style1.css">
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">  
+
+$(document).ready(function () {
+    $('body').css("background-position","100px 100px");
+});
+$(document).ready(function () {
+    //アニメーションスピード
+    var scrollSpeed = 1;
+    //画像サイズ
+    var imgWidth = 500;
+    //画像の初期位置
+    var posX = 0;
+    //ループ処理
+    setInterval(function(){
+        //画像のサイズまで移動したら0に戻る。
+        if (posX >= imgWidth) posX= 0;
+        //scrollSpeed分移動
+        posX += scrollSpeed;
+        $('body').css("background-position",posX+"px 0px");
+    }, 1);
+});
+</script>
+</head>
+
+
+
+
+
+
+<body>
+<div id="SampleWrap"></div>
+<div id="Sample"></div>
+</div>
+<div id="container">
+
+
+<center>
+<header>
+</header>
+</center>
+
+<nav id="menu">
+<ul>
+<li><a href="home.html"></a></li>
+<li><a href="yougaku.html"></a></li>
+<li><a href="zyouhou.html"></a></li>
+<li><a href="rironn.html"></a></li>
+<li><a href="skype.html"></a></li>
+</ul>
+</nav>
+
+<aside id="mainimg">
+<img src="images/ggg.JPG" alt="">
+</aside>
+
+
+<div id="contents">
+</div>
+
+<div id="footer">
+<small></small>
+</div>
+
+
+
+
+</div>
+
+</body>
+
+
+</html>
